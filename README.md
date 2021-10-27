@@ -1,2 +1,2 @@
 # digital-agency-landing-page
-Landing page for a digital agency.
+A small HTML landing page for a digital agency.
