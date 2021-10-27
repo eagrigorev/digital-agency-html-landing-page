@@ -1,0 +1,154 @@
+.footer {
+    background: #316099;
+    &__upper {
+        display: flex;
+        justify-content: space-between;
+        &__button {
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: #ffffff;
+            background: #5a98d0;
+            padding: 15px 80px;
+            margin: auto 0;
+        }
+    }
+    &__bottom {
+        &__links {
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            display: flex;
+            padding-top: 64px;
+            padding-bottom: 64px;
+            justify-content: space-between;
+        }
+        &_link {
+            width: 317px;
+        }
+    }
+    &__container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}
+.cta {
+    &__h3 {
+        font-size: 36px;
+        line-height: 46px;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        width: 340px;
+        padding-top: 91px;
+        padding-bottom: 32px;
+    }
+    &__tagline {
+        color: #ffffff;
+        width: 495px;
+        padding-bottom: 96px;
+    }
+}
+.divider {
+    opacity: 0.4;
+    border: 1px solid #ffffff;
+}
+.copyright {
+    padding-bottom: 64px;
+    &__text {
+        color: #ffffff;
+        opacity: 0.4;
+    }
+}
+
+/* Landscape tablet */
+
+@media (max-width: 1024px) {
+    .footer {
+        &__upper {
+            &__button {
+                padding: 3px 10px;
+                width: 133px;
+            }
+        }
+        &__bottom {
+            &__links {
+                flex-direction: column;
+            }
+            &_link {
+                padding-bottom: 25px;
+                padding-left: 45px;
+                width: auto;
+            }
+        }
+        &__container {
+            padding-left: 124px;
+            padding-right: 124px;
+        }
+    }
+    .cta {
+        &__h3 {
+            padding-top: 47px;
+        }
+        &__tagline {
+            width: 336px;
+            padding-bottom: 64px;
+        }
+    }
+}
+
+/* Landscape mobile */
+
+@media (max-width: 667px) {
+    .footer {
+        &__upper {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 41px;
+            &__button {
+                padding: 0 0;
+                width: 108px;
+                height: 31px;
+            }
+        }
+        &__bottom {
+            &__links {
+                padding-top: 32px;
+                padding-left: 32px;
+                line-height: 18.75px;
+                flex-direction: column;
+            }
+            &_link {
+                padding-bottom: 17px;
+                padding-left: 23px;
+                width: 304px;
+            }
+        }
+        &__container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .cta {
+        &__h3 {
+            font-size: 24px;
+            line-height: 28px;
+            padding-top: 18px;
+            text-align: center;
+        }
+        &__tagline {
+            width: 343px;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+    }
+    .copyright {
+        padding-bottom: 32px;
+
+        &__text {
+            text-align: center;
+        }
+    }
+}

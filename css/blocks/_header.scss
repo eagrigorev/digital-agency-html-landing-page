@@ -1,0 +1,98 @@
+.header {
+    min-height: 768px;
+    background: linear-gradient(
+        0deg,
+        #ebf3fb 8.84%,
+        rgba(152, 195, 232, 0) 31.12%
+    );
+}
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    &__info {
+        padding-top: 115px;
+        flex-grow: 1;
+        background-image: url(../img/hero-bg.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 44%;
+    }
+    &__h1 {
+        font-size: 64px;
+        color: #1f3f68;
+        width: 510px;
+        font-weight: 300;
+        line-height: 74px;
+        letter-spacing: 0.04em;
+        margin-bottom: 32px;
+    }
+    &__text {
+        width: 425px;
+    }
+    &__button {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #ffffff;
+        background: #5a98d0;
+        box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+        border-radius: 10px;
+        padding: 15px 50px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 71px;
+    }
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-top: 42px;
+}
+
+/* Landscape tablet */
+
+@media (max-width: 1024px) {
+    .hero {
+        &__info {
+            background-position: right bottom;
+        }
+    }
+}
+
+/* Landscape mobile */
+
+@media (max-width: 667px) {
+    .header {
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+    .hero {
+        &__h1 {
+            font-size: 32px;
+            line-height: 37px;
+            margin-bottom: 12px;
+            width: 100%;
+        }
+        &__text {
+            width: 100%;
+            text-align: center;
+        }
+        &__info {
+            padding-top: 36px;
+            text-align: center;
+            background-image: none;
+        }
+        &__button {
+            font-size: 12px;
+            line-height: 26px;
+            padding: 0 8px;
+        }
+    }
+    .nav {
+        padding-top: 24px;
+    }
+}
